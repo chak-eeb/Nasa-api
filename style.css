@@ -33,9 +33,6 @@ body {
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
 /* navigation styling */
 
 .navigation-container {
@@ -109,6 +106,10 @@ body {
   padding: 8px 6px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Large Smartphone (Vertical) */

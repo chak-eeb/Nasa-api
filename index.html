@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
     <title>Nasa api</title>
@@ -21,19 +25,18 @@
         <span class="background"></span>
         <!-- results nav -->
         <span class="navigation-items" id="resultsNav">
-          <h3 class="clickable">Favorites</h3>
+          <h3 class="clickable" onclick="createDOM('favorites')">Favorites</h3>
           <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
-          <h3 class="clickable ">Load more</h3>
+          <h3 class="clickable" onclick="getNasPix()">Load more</h3>
         </span>
 
         <!-- Favourites nav -->
-        <span class="navigation-items" id="favoritesNav">
-            <h3 class="clickable hidden">Load more Nasa images</h3>
+        <span class="navigation-items hidden" id="favoritesNav">
+          <h3 class="clickable" onclick="getNasPix()">Load more Nasa images</h3>
+        </span>
       </div>
       <!-- images container -->
-      <div class="images-container">
-        
-      </div>
+      <div class="images-container"></div>
     </div>
     <!-- save-confirmed -->
     <div class="save-confirmed" hidden>
